@@ -6,10 +6,6 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
-#
-#  data:
-#    mongodb:
-#      uri: mongodb://localhost:27017/gallerydb
 
 server:
   port: 8081
