@@ -4,10 +4,12 @@ import com.trofimets.springcloud.bookservice.model.Book;
 import com.trofimets.springcloud.bookservice.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional(readOnly = true)
 public class BookServiceImpl implements BookService {
 
     private BookRepository bookRepository;
